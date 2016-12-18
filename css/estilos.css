@@ -1,0 +1,42 @@
+body {background:#1D7ADD;
+		font-size: 16px;
+		margin:10px;
+
+}
+h1,h2{
+	background:#000;
+	color:white;
+	width:780px; 
+	border-style:outset;
+	border color:gray; 
+
+}
+h4{
+	background:#000;
+	color:white;	
+	width:85px;
+}
+h5{
+	background: #000;	
+	color:white;
+	width:310px;
+	border-style:outset;
+	border color:gray;
+}
+h3 {
+	background:#000;
+	color:white;
+	width:400px;
+	border-style:outset;
+	border color:gray;
+	
+	}
+
+
+
+
+}
+.anotaciones{
+	margin:0px;
+}
+
