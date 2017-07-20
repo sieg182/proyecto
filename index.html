@@ -1,175 +1,151 @@
 <html>
-	<html lang="es">
-	<head>
-		<title>Urquidi Guitars</title>
-		<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	</head>
-	<body>
-		
-		<form action="datos.php">
-			<br><br><br>
-		<label for="fecha"> <b>Fecha</b> </label>
-			<input type="date" id="fecha" size="10" class="dial">
-			<br><br>
-		<label for="folio"> <b>Folio</b> </label>
-			<input type="text" id="folio" size="17" class="dial">
-		<br><br><br><br><br>
-		
-			<h2>DATOS DEL CLIENTE</h2>
-				<br><br> 
-			<label for="nombre"> <b>Nombre del cliente</b> </label>  
- 				<input type="text" id="nombre" size="25" class="dial" >
- 			<label for="numero telefono"><b> Numero de telefono</b> </label>	
- 				<input type="tel" id="numero telefono" size="10" class="dial">
- 			<label for="email"> <b>Email</b> </label>
- 				<input type="email" id="email" size="15" class="dial">
- 				
- 			<h2>INFORMACION DEL INSTRUMENTO,ACCESORIOS Y MATERIALES</h2>
- 			
- 			<b>Instrumento</b>
- 			<br>
- 			<input type="checkbox"> Guitarra Electrica 
- 			<input type="checkbox"> Guitarra Acustica
- 			<input type="checkbox"> Bajo
- 			<input type="checkbox"> Otro
- 			<label for="otro"> </label>
- 				<input type="text" id="otro" size="30">
- 				<br><br>			
- 			<label for="marca"><b>Marca</b>
- 				<input type="text" id="marca">
- 			<label for="modelo"> <b>Modelo</b>
- 				<input type="text" id="modelo">
-			<label for="año"> <b>A&ntilde;o</b>
-				<input type="text" id="año" maxlength="4">
-				<br><br>
-			<label for="serie"> <b>No. de serie</b>
-				<input type="text" id="serie" >
-			<b>Estuche:</b>
-				<input type="checkbox" align="right"> Hard Case
-				<input type="checkbox"> Gig Bag
-				<input type="checkbox"> Sin Estuche
-				<br>			
-			<label for="setup">	<b>Setup</b>
-				<input type="text" id="setup">
-			<b>Afinacion</b>
-				<input type="checkbox"> 440hz
-				<input type="checkbox"> 432hz
-				<input type="checkbox"> Dropped	
-					<select>
-						<option value=""> </option>
-						<option value="Drop D"> Drop D </option>
-						<option value="Drop C"> Drop C </option>
-					</select>
-				<label for="custom"> Custom 
-						<input type="text" maxlength="6" id="custom" size="10">
-				
+<html lang="es">
 
-				<h2>CUERDAS</h2>
-					
-					<b>Proporcionadas por el cliente:</b>
-					<input type="checkbox"> Si
-					<input type="checkbox"> No
-						<b>Grosor</b>
-					<select>
-						<option value="9"> 9
-						<option value="10"> 10
-					</select>
-					<label for="otro"> Otro
-						<input type="number" id="otro">
-						<br><br>
-						<label for="marca"><b>Marca</b>
-							<input type="text" id="marca">
-					<label for="materiales"> Materiales
-						<input type="text" id="materiales">
-							
-				<h3>REPARACIONES/MODIFICACIONES/NOTAS</h3> 	
-					<div class="anotaciones"><textarea rows="10" cols="80"> 
-					</textarea>	
-					</div>
-					<h4><b>MEDIDAS</b></h4>
-					
-					 <h4>Originales</h4>
-						<label for="lado grave">Accion lado grave
-							<input type="text" id="lado grave">
-						<br>
-						<label for="lado agudo">Lado agudo
-							<input type="text" id="lado agudo">
-						<br>
-						<label for="arco traste"> Arco al traste
-							<input type="text" id="arco traste">
-						<br>
-						<label for="medida arco">Medida arco
-							<input type="text" id="medida arco">
-						<br>
-						<label for="pastilla b">Pastilla B	
-							<input type="text" id="pastilla b">
-						<br>
-						<label for="pastilla m">Pastilla M
-							<input type="text" id="pastilla m">
-						<br>
-						<label for="pastilla n">Pastilla N
-							<input type="text" id="pastilla n">
-						
-						<h4>Modificadas</h4>							
-						<label for="lado grave2">Accion lado grave
-							<input type="text" id="lado grave2">
-							<br>
-						<label for="lado agudo2">Lado agudo	
-							<input type="text" id="lado agudo2">
-							<br>
-						<label for="arco al traste2"> Arco al traste
-							<input type="text" id="arco al traste2">
-							<br>
-						<label for="medida arco2">Medida arco
-							<input type="text" id="medida arco2">
-							<br>
-						<label for="pastilla b2">Pastilla B
-							<input type="text" id="pastilla b2">
-							<br>
-						<label for="pastilla m2">Pastilla M
-							<input type="text" id="pastilla m2">
-							<br>
-						<label for="pastilla n2">Pastilla N
-							<input type="text" id="pastilla n2">
-						
+<head>
+    <title>Urquidi Guitars</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
 
-					
-				
-		</form>
-					
-				 
-
-			
-			<h5>FECHA RECOMENDADA DE PROXIMO AJUSTE</h5>
-				
-						<textarea rows="5" cols="15"> 
-							
-						</textarea>	
-			<br><br>
-
-			<input type="submit" value="GUARDAR">
-			<br>
-	<div align="center">
-   <footer><b>Steve Jars Soft all right reserved-2017</b></footer> 
- 	</div>
-		
-	
-
-
-
-  		
-
-
-
-	</body>
-
-
-
-
-
-
-
-
-
+<body>
+    <form action="datos.php">
+        <br>
+        <br>
+        <br>
+        <label for="fecha"> <b>Fecha</b> </label>
+        <input type="date" id="fecha" size="10" class="dial">
+        <br>
+        <br>
+        <label for="folio"> <b>Folio</b> </label>
+        <input type="text" id="folio" size="17" class="dial">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>DATOS DEL CLIENTE</h2>
+        <br>
+        <br>
+        <label for="nombre"> <b>Nombre del cliente</b> </label>
+        <input type="text" id="nombre" size="25" class="dial">
+        <label for="numero telefono"><b> Numero de telefono</b> </label>
+        <input type="tel" id="numero telefono" size="10" class="dial">
+        <label for="email"> <b>Email</b> </label>
+        <input type="email" id="email" size="15" class="dial">
+        <h2>INFORMACION DEL INSTRUMENTO,ACCESORIOS Y MATERIALES</h2>
+        <b>Instrumento</b>
+        <br>
+        <input type="checkbox"> Guitarra Electrica
+        <input type="checkbox"> Guitarra Acustica
+        <input type="checkbox"> Bajo
+        <input type="checkbox"> Otro
+        <label for="otro"> </label>
+        <input type="text" id="otro" size="30">
+        <br>
+        <br>
+        <label for="marca"><b>Marca</b> </label>
+        <input type="text" id="marca">
+        <label for="modelo"> <b>Modelo</b></label>
+        <input type="text" id="modelo">
+        <label for="año"> <b>A&ntilde;o</b></label>
+        <input type="text" id="año" maxlength="4">
+        <br>
+        <br>
+        <label for="serie"> <b>No. de serie</b></label>
+        <input type="text" id="serie">
+        <b>Estuche:</b>
+        <input type="checkbox" align="right"> Hard Case
+        <input type="checkbox"> Gig Bag
+        <input type="checkbox"> Sin Estuche
+        <br>
+        <label for="setup"> <b>Setup</b></label>
+        <input type="text" id="setup">
+        <b>Afinacion</b>
+        <input type="checkbox"> 440hz
+        <input type="checkbox"> 432hz
+        <input type="checkbox"> Dropped
+        <select>
+            <option value=""> </option>
+            <option value="Drop D"> Drop D </option>
+            <option value="Drop C"> Drop C </option>
+        </select>
+        <label for="custom"> Custom</label>
+        <input type="text" maxlength="6" id="custom" size="10">
+        <h2>CUERDAS</h2>
+        <b>Proporcionadas por el cliente:</b>
+        <input type="checkbox"> Si
+        <input type="checkbox"> No
+        <b>Grosor</b>
+        <select>
+            <option value="9"> 9
+                <option value="10"> 10
+        </select>
+        <label for="otro"> Otro</label>
+        <input type="number" id="otro">
+        <br>
+        <br>
+        <label for="marca"><b>Marca</b></label>
+        <input type="text" id="marca">
+        <label for="materiales"> Materiales</label>
+        <input type="text" id="materiales">
+        <h3>REPARACIONES/MODIFICACIONES/NOTAS</h3>
+        <div class="anotaciones">
+            <textarea rows="10" cols="80">
+            </textarea>
+        </div>
+        <h4><b>MEDIDAS</b></h4>
+        <h4>Originales</h4>
+        <label for="lado grave">Accion lado grave </label>
+        <input type="text" id="lado grave">
+        <br>
+        <label for="lado agudo">Lado agudo</label>
+        <input type="text" id="lado agudo">
+        <br>
+        <label for="arco traste"> Arco al traste</label>
+        <input type="text" id="arco traste">
+        <br>
+        <label for="medida arco">Medida arco</label>
+        <input type="text" id="medida arco">
+        <br>
+        <label for="pastilla b">Pastilla B</label>
+        <input type="text" id="pastilla b">
+        <br>
+        <label for="pastilla m">Pastilla M</label>
+        <input type="text" id="pastilla m">
+        <br>
+        <label for="pastilla n">Pastilla N</label>
+        <input type="text" id="pastilla n">
+        <h4>Modificadas</h4>
+        <label for="lado grave2">Accion lado grave</label>
+        <input type="text" id="lado grave2">
+        <br>
+        <label for="lado agudo2">Lado agudo</label>
+        <input type="text" id="lado agudo2">
+        <br>
+        <label for="arco al traste2"> Arco al traste</label>
+        <input type="text" id="arco al traste2">
+        <br>
+        <label for="medida arco2">Medida arco</label>
+        <input type="text" id="medida arco2">
+        <br>
+        <label for="pastilla b2">Pastilla B</label>
+        <input type="text" id="pastilla b2">
+        <br>
+        <label for="pastilla m2">Pastilla M</label>
+        <input type="text" id="pastilla m2">
+        <br>
+        <label for="pastilla n2">Pastilla N</label>
+        <input type="text" id="pastilla n2">
+    </form>
+    <h5>FECHA RECOMENDADA DE PROXIMO AJUSTE</h5>
+    <textarea rows="5" cols="15">
+    </textarea>
+    <br>
+    <br>
+    <input type="submit" value="GUARDAR">
+    <br>
+    <div align="center">
+        <footer><b>Steve Jars Soft all right reserved-2017</b></footer>
+    </div>
+</body>
 
 </html>
